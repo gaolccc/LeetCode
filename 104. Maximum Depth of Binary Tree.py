@@ -1,5 +1,5 @@
 '''
-[104. Maximum Depth of Binary Tree.py](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
 
 Given a binary tree, find its maximum depth.
 
