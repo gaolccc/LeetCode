@@ -41,15 +41,23 @@ class Solution(object):
     
 '''
 Other solution:
-class Solution(object):
-	def arrangeCoins(self, n):
-		"""
-		:type n: int
-		:rtype: int
-		"""
-		i = 1
-		while n >= i:
-			n -= i
-			i += 1
-		return i - 1
+1. 
+def arrangeCoins(self, n):
+	"""
+	:type n: int
+	:rtype: int
+	"""
+	i = 1
+	while n >= i:
+		n -= i
+		i += 1
+	return i - 1
+
+2.
+def arrangeCoins(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        return int((1+8*n)**0.5 - 1) / 2
 '''
