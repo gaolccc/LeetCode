@@ -26,14 +26,10 @@ class Solution(object):
         carry, sum = 0, []
         for i in range(len(num1)):
             val = ord(num1[-1-i]) + ord(num2[-1-i]) - 2*ord('0') + carry
-            if val > 9:
-                sum.append(val - 10)
-                carry = 1
-            else:
-                sum.append(val)
-                carry = 0
-        sum = ''.join(list(map(lambda x: str(x), sum[::-1])))
-        return '1' + sum if carry == 1 else sum
+            sum.append(val % 10)
+            carry = val // 10
+        sum = ''.join(list(map(str, sum[::-1])))
+        return '1' + sum if carry else sum
         
 '''
 Other's solution:
