@@ -29,7 +29,7 @@ class Solution:
         return l1 or l2
         
 '''
-Other solution:
+Other solution: (https://leetcode.com/problems/merge-two-sorted-lists/discuss/9771/Simple-5-lines-Python)
 
 First make sure that a is the “better” one (meaning b is None or has larger/equal value). Then merge the remainders behind a.
 
