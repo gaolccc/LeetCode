@@ -28,3 +28,15 @@ class Solution:
             l1.next = self.mergeTwoLists(l1.next, l2)
         return l1 or l2
         
+'''
+Other solution:
+
+First make sure that a is the “better” one (meaning b is None or has larger/equal value). Then merge the remainders behind a.
+
+def mergeTwoLists(self, a, b):
+    if not a or b and a.val > b.val:
+        a, b = b, a
+    if a:
+        a.next = self.mergeTwoLists(a.next, b)
+    return a
+'''
